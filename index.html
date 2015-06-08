@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mi_Proyecto</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script>
+<script src="jquery-mobile/sal.js"></script>
+<style>
+#principal {
+	position: absolute;
+	left:0;
+	top:0;
+	background-color:#009;
+	width:100%;
+	background-image:url(imagenes/dise%C3%B1os/paisaje.gif);
+}
+#pantalla {
+	float:left;
+	width:100%;
+	height:25%;
+	background-image:url(imagenes/dise%C3%B1os/paisaje.gif);
+	text-align:center;
+	font-size:3em;
+	font-weight:bold;
+	font-family:Candara, "Century Gothic", "Juice ITC";
+}
+#teclado {
+	float:left;
+	width:100%;
+	height:50%;
+}
+.nota {
+	position:relative;
+	float:left;
+	outline:#00C solid 1px;
+	background-image:url(imagenes/dise%C3%B1os/fondo2.jpg);
+	width:50%;
+	height:33.33%;
+}
+.textonota {
+	position:relative;
+	top:80%;
+	text-align:center;
+	font-size:2em;
+	font-weight:bold;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#0CF;
+}
+.tocada {
+	color:#009;
+	background:#F36;
+	outline:solid 1px #006;
+}
+</style>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+     <div id="principal">
+     <div id="pantalla">
+    Presenta a los animalitos
+	</div>
+	<div data-role="coneent">
+    <div align="center">Te invito a conocer algunos animalitos muy agradables </div> 
+     <div align="center" data-role="controlgroup" data-type="vertical">
+         <div style="width:50%">
+         <a href="#page2" data-role="button" id="Animales Domesticos">
+          Animales Domesticos
+          </a>
+          </div>
+          </div>
+          <div align="center" data-role="controlgroup" data-type="vertical">
+         <div style="width:50%">
+         <a href="#page3" data-role="button" id="Animales Salvajes">
+          Animales Salvajes
+         </a>  
+         </div>
+         </div>
+     	</div>
+	<div data-role="footer">
+		<h4>Mtro:DAVID NIETO LOPEZ</h4>
+	</div>
+    </div>
+    </div> 
+  
+
+<div data-role="page" id="page2" data-add-back-btn="true" data-back-btn-text="regresar">
+<div id="principal">
+<div data-role="header" id="pantalla" style="background-image:url(imagenes/dise%C3%B1os/fondo3.jpg)">
+		Animales Domesticos
+	</div>		
+		<div id="teclado">
+    <div id="perro" class="nota">
+    <div align="center"><img src="imagenes/imagenes domesticos/perro.jpg" width="204" height="171" alt="perro">
+     </div>
+    </div>
+    <div id="gato" class="nota">
+    <div align="center"><img src="imagenes/imagenes domesticos/gatito.jpg" width="204" height="171" alt="gato">
+    </div>
+    </div>
+    <div id="pato" class="nota">
+    <div align="center"><img src="imagenes/imagenes domesticos/pato.jpg" width="204" height="171" alt="gato">
+    </div>
+    </div>
+    <div id="tortuga" class="nota">
+    <div align="center"><img src="imagenes/imagenes domesticos/tortuga.jpg" width="204" height="171" alt="tortuga">
+    </div>
+    </div>
+    <div id="conejo" class="nota">
+    <div align="center"><img src="imagenes/imagenes domesticos/conejo.jpg" width="204" height="171" alt="conejo">
+    </div>
+    </div>
+    <div id="caballo" class="nota">
+    <div align="center"><img src="imagenes/imagenes domesticos/caballo.jpg" width="204" height="171" alt="caballo">
+    </div>
+    </div>
+    </div>
+    <div data-role="footer" style="background-image:url(imagenes/dise%C3%B1os/fondo3.jpg)">
+		<h4>Martha Cruz Patricio</h4>
+	</div>
+</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true" data-back-btn-text="regresar">
+<div id="principal">
+	<div data-role="header" id="pantalla" style="background-image:url(imagenes/dise%C3%B1os/fondo3.jpg)">
+	Animales Salvajes
+	</div>
+	<div id="teclado">
+    <div id="cebra" class="nota">
+    <div align="center"><img src="imagenes/imagenes salvajes/cebra.jpg"width="204" height="171" alt="cebra">
+    </div>
+    </div>
+    <div id="elefante" class="nota">
+    <div align="center"><img src="imagenes/imagenes salvajes/elefante.jpg" width="204" height="171" alt="elefante"> 
+      </div>
+      </div>
+    <div id="foca" class="nota">
+    <div align="center"><img src="imagenes/imagenes salvajes/foca.jpg" width="204" height="171" alt="foca">
+    </div>
+    </div>
+    <div id="oso" class="nota">
+    <div align="center"><img src="imagenes/imagenes salvajes/oso.jpg" width="204" height="171" alt="oso">
+    </div>
+    </div>
+    <div id="panda" class="nota">
+    <div align="center"><img src="imagenes/imagenes salvajes/panda.jpg" width="204" height="171" alt="panda">
+    </div>
+    </div>
+    <div id="tigre" class="nota">
+    <div align="center"><img src="imagenes/imagenes salvajes/tigre.jpg" width="204" height="171" alt="tigre">
+    </div>
+    </div>
+    </div>
+	<div data-role="footer" style="background-image:url(imagenes/dise%C3%B1os/fondo3.jpg)">
+		<h4>Martha Cruz Patricio</h4>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
